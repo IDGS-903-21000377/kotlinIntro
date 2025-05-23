@@ -13,9 +13,22 @@
         android:theme="@style/Theme.Kotlin"
         tools:targetApi="31">
         <activity
+            android:name=".Practica4.ArchivosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Practica3.Ejemplo3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".saludo.SaludoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cinepolitos.CinepolitoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".OperasBasicas.OperasActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Practicas.MenuActivity"
             android:exported="true"

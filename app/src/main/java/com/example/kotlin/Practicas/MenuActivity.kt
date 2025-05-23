@@ -8,7 +8,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.kotlin.Cinepolitos.CinepolitoActivity
 import com.example.kotlin.OperasBasicas.OperasActivity
+import com.example.kotlin.Practica4.ArchivosActivity
 import com.example.kotlin.R
 
 
@@ -21,7 +23,9 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         val btnSaludo = findViewById<Button>(R.id.btn1)
-        val btnIrOperas = findViewById<Button>(R.id.btnIrOperas) // <- nuevo botón
+        val btnIrOperas = findViewById<Button>(R.id.btnIrOperas)
+        val btnirCine = findViewById<Button>(R.id.btn2)
+        val btnText = findViewById<Button>(R.id.btn3)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -36,6 +40,17 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, OperasActivity::class.java)
             startActivity(intent)
         }
+
+        btnirCine.setOnClickListener {
+            val intent = Intent(this, CinepolitoActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnText.setOnClickListener {
+            val intent = Intent(this, ArchivosActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
 

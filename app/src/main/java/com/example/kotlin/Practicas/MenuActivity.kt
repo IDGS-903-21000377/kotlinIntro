@@ -25,7 +25,6 @@ class MenuActivity : AppCompatActivity() {
         val btnSaludo = findViewById<Button>(R.id.btn1)
         val btnIrOperas = findViewById<Button>(R.id.btnIrOperas)
         val btnirCine = findViewById<Button>(R.id.btn2)
-        val btnText = findViewById<Button>(R.id.btn3)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -46,10 +45,7 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnText.setOnClickListener {
-            val intent = Intent(this, ArchivosActivity::class.java)
-            startActivity(intent)
-        }
+
 
     }
 }

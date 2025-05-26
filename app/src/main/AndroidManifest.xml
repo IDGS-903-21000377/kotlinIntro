@@ -15,7 +15,8 @@
         <activity
             android:name=".Practica4.ArchivosActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            />
+           
 
 
 

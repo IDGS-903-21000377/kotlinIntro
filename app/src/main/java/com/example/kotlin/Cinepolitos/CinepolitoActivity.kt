@@ -23,7 +23,7 @@ class CinepolitoActivity : AppCompatActivity() {
             insets
         }
 
-        // ✅ Ahora sí se pueden buscar las vistas
+        //Ahora sí se pueden buscar las vistas
         val editTextNombre = findViewById<EditText>(R.id.editTextText)
         val editTextCantidad = findViewById<EditText>(R.id.editTextNumber)
         val radioSi = findViewById<RadioButton>(R.id.radioButton)
